@@ -9,6 +9,7 @@ export const ImcComponent = () => {
     const [peso, setPeso] = useState("");
     const [altura, setAltura] = useState("");
     const [img, setImg] = useState("");
+    const [imcVal, setImc] = useState("");
     const [typeOb, setTypeOb] = useState("");
     // Función para volver a la página principal
     const btnBack = () => {
@@ -32,26 +33,30 @@ export const ImcComponent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault(); // Previene el comportamiento predeterminado del formulario
         const imc = peso / (altura * altura);
-        console.log(imc);
         if (imc >= 18.5 && imc <= 24.9) {
             setImg('public/img/normal.png');
             setTypeOb('Normal');
+            setImc(imc);
             setSecond(true);
         } else if (imc >= 25 && imc <= 29.9) {
             setImg('public/img/sobrepeso.png');
             setTypeOb('SobrePeso');
+            setImc(imc);
             setSecond(true);
         } else if (imc >= 30 && imc <= 34.9) {
             setImg('public/img/obesidad1.png');
             setTypeOb('Obesidad I');
+            setImc(imc);
             setSecond(true);
         } else if (imc >= 35 && imc <= 39.9) {
             setImg('public/img/obesidad2.png');
             setTypeOb('Obesidad II');
+            setImc(imc);
             setSecond(true);
         } else if (imc >= 40) {
             setImg('public/img/obesidad3.png');
             setTypeOb('Obesidad III');
+            setImc(imc);
             setSecond(true);
         }
         setFirst(false);
@@ -91,6 +96,7 @@ export const ImcComponent = () => {
                     <h1>Ingresar los Datos</h1>
                     <div className="container-img">
                         <img src={img} alt="" />
+                        <p>Valor: {imcVal}</p>
                         <p>{typeOb}</p>
                     </div>
                 </div>
