@@ -36,7 +36,7 @@ export const Home = () => {
                         tabIndex="0"
                         onClick={() => setControl(1)}
                     >
-                        <img src="public/img/bmi.png" alt="" />
+                        <img src="./bmi.png" alt="" />
                         <p>IMC</p>
                     </div>
                     {/* Opción para gestionar mano de obra */}
@@ -45,7 +45,7 @@ export const Home = () => {
                         tabIndex="0"
                         onClick={() => setControl(2)}
                     >
-                        <img src="public/img/picture.png" alt="" />
+                        <img src="./picture.png" alt="" />
                         <p>Galeria de Imagenes</p>
                     </div>
                     {/* Opción para gestionar costos indirectos */}
@@ -54,7 +54,7 @@ export const Home = () => {
                         tabIndex="0"
                         onClick={() => setControl(3)}
                     >
-                        <img src="public/img/table.png" alt="" />
+                        <img src="./table.png" alt="" />
                         <p>Tabla Dinamica</p>
                     </div>
                     {/* Opción para ver informes */}
@@ -63,7 +63,7 @@ export const Home = () => {
                         tabIndex="0"
                         onClick={() => setControl(4)}
                     >
-                        <img src="public/img/api.png" alt="" />
+                        <img src="./api.png" alt="" />
                         <p>API</p>
                     </div>
                 </div>

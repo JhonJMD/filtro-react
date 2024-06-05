@@ -34,27 +34,27 @@ export const ImcComponent = () => {
         e.preventDefault(); // Previene el comportamiento predeterminado del formulario
         const imc = peso / (altura * altura);
         if (imc >= 18.5 && imc <= 24.9) {
-            setImg('public/img/normal.png');
+            setImg('./normal.png');
             setTypeOb('Normal');
             setImc(imc);
             setSecond(true);
         } else if (imc >= 25 && imc <= 29.9) {
-            setImg('public/img/sobrepeso.png');
+            setImg('./sobrepeso.png');
             setTypeOb('SobrePeso');
             setImc(imc);
             setSecond(true);
         } else if (imc >= 30 && imc <= 34.9) {
-            setImg('public/img/obesidad1.png');
+            setImg('./obesidad1.png');
             setTypeOb('Obesidad I');
             setImc(imc);
             setSecond(true);
         } else if (imc >= 35 && imc <= 39.9) {
-            setImg('public/img/obesidad2.png');
+            setImg('./obesidad2.png');
             setTypeOb('Obesidad II');
             setImc(imc);
             setSecond(true);
         } else if (imc >= 40) {
-            setImg('public/img/obesidad3.png');
+            setImg('./obesidad3.png');
             setTypeOb('Obesidad III');
             setImc(imc);
             setSecond(true);
