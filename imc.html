@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div className="container-formMP">
+        <button className="button" onClick={btnBack}>
+            ← Volver
+        </button>
+        <h1>Calculadora de IMC</h1>
+        <h1>Ingresar los Datos</h1>
+        <div className="cont-formMockMateriaP">
+            <form className="formMP" onSubmit={handleSubmit}>
+                <div className="optionsForm">
+                    <span>Peso</span>
+                    <input type="number" id="peso" name="peso" placeholder="Kilogramos" value={formData.nameProveedor}
+                        onChange={handleChange} required />
+                </div>
+                <div className="optionsForm">
+                    <span>Altura</span>
+                    <input type="number" id="altura" name="altura" placeholder="Metros" value={formData.Cantidad}
+                        onChange={handleChange} required />
+                </div>
+                <button className="add" type="submit">
+                    Calcular
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
